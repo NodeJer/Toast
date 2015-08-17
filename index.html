@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+	<title>Examples</title>
+	<meta name="description"content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="keywords"content="">
+	<style>
+	
+	body{
+		background: url(https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=226630512,2564785629&fm=58)
+	}
+</style>
+</head>
+<body>
+	<button onclick="createToast()">create Toast</button>
+	<script src="Toast.js"></script>
+	<script>
+		function createToast(){
+			/*var toast = new Toast(document.body);
+			toast.setView("消息");
+			toast.show();*/
+
+			var toast = Toast.markText(document.body, "消息消息消息");
+
+			//toast.setCss({top: "45%", bottom: "auto"});
+
+			//console.log(toast.getOffset())
+		}
+	</script>
+</body>
+</html>
