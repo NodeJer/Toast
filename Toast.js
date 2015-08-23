@@ -23,8 +23,6 @@
 			}
 		},
 		setCss: function(json){
-			this.location = json;
-
 			for(var prop in json){
 				this.getWindow().style[prop] = json[prop];
 			}
@@ -95,7 +93,9 @@
 
 	Toast.markText = function(context, text, dur){
 		var toast = new Toast(context);
+		
 		toast.setView(text);
+
 		if(dur > 0){
 			toast.setDuration(dur);
 		}
